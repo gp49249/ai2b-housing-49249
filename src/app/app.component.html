@@ -1,11 +1,6 @@
-<main>
-  <a [routerLink]="['/']">
-    <header class="brand-name">
-      <img class="brand-logo" src="/assets/house.svg" alt="logo" aria-hidden="true">
-      <strong>Homes</strong>
-    </header>
-  </a>
-  <section class="content">
-    <router-outlet></router-outlet>
-  </section>
-</main>
+<h1>{{title}}</h1>
+
+<app-random></app-random>
+<app-random [max]="100"></app-random>
+<app-list></app-list>
+

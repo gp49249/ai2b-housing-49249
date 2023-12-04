@@ -1,0 +1,19 @@
+<div id="frame">
+  <div>Random Component (max = {{ max }})</div>
+  <span>{{ myNumber }}</span>
+  <button (click)="btnClick()">DRAW</button>
+  <span
+    *ngIf="isSmallerThanHalf()"
+    [class.green]="isSmallerThanHalf()"
+    [class.red]="!isSmallerThanHalf()"
+  >
+    Lower half of the value
+  </span>
+  <span
+    *ngIf="!isSmallerThanHalf()"
+    [class.red]="!isSmallerThanHalf()"
+    [class.green]="isSmallerThanHalf()"
+  >
+    Upper half of the value
+  </span>
+</div>
