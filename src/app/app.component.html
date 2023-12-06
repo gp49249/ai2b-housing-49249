@@ -1,6 +1,11 @@
-<h1>{{title}}</h1>
+<header>
+  <h1>Local Storage Contact List - LAB C</h1>
+  <!-- Dodaj przycisk "Add" -->
+  <button class="add-button" routerLink="/add">Add</button>
+</header>
 
-<app-random></app-random>
-<app-random [max]="100"></app-random>
-<app-list></app-list>
+<div class="router-outlet">
+  <router-outlet></router-outlet>
+</div>
 
+<footer>Author - Patryk Gendek 49249</footer>

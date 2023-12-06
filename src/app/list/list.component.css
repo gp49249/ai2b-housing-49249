@@ -1,57 +1,21 @@
-#frame {
-  font-family: 'Roboto', sans-serif;
-  border: 2px solid #3498db;
-  padding: 20px;
-  background-color: #ecf0f1;
-  text-align: center;
-  box-shadow: 0px 0px 10px 0px #bdc3c7;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 400px;
+:host {
+  font-size: 24px;
 }
 
-#frame > div {
-  margin-bottom: 10px;
+p {
+  font-size: 24px;
 }
 
-#frame > div > input {
-  padding: 10px;
-  margin-right: 10px;
-}
-
-#frame > div > button {
-  padding: 10px;
-  background-color: darkslateblue;
+.delete {
+  background-color: #ff6347;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
 }
 
-#frame > div > button:hover {
-  background-color: #7a6ed4;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul > li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #bdc3c7;
-  padding: 10px;
-}
-
-a {
-  color: #e74c3c;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.delete:hover {
+  background-color: #cc4c3e;
 }

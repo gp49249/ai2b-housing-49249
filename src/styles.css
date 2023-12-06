@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("https://placehold.co/100x100/FFFFFF/EFEFEF/png?text=49249");
+}
+
+:root {
+  --primary-color: #5b46c2; /* Kolor fioletowy */
+  --secondary-color: #3498db; /* Nowy kolor wtórny, pasujący do fioletowego */
+  --accent-color: #ffffff; /* Nowy kolor akcentu */
+  --shadow-color: #E8E8E8;
+}
+
+button.primary {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: var(--accent-color);
+  border-radius: 8px;
+}
+
+body, h1, h2, h3, p, a, button {
+  font-family: 'Comic Sans MS', cursive;
+}
