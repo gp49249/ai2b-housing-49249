@@ -1,11 +1,13 @@
 <header>
-  <h1>Local Storage Contact List - LAB C</h1>
-  <!-- Dodaj przycisk "Add" -->
-  <button class="add-button" routerLink="/add">Add</button>
+  <h1>Backend-Based Task Manager</h1>
+  <nav>
+    <a routerLink="/tasks" routerLinkActive="active">Tasks</a>
+    <a routerLink="/archive" routerLinkActive="active">Archive</a>
+  </nav>
 </header>
 
 <div class="router-outlet">
   <router-outlet></router-outlet>
 </div>
 
-<footer>Author - Patryk Gendek 49249</footer>
+<footer>Patryk Gendek</footer>

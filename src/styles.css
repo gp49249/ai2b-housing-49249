@@ -14,14 +14,6 @@ body {
   --shadow-color: #E8E8E8;
 }
 
-button.primary {
-  padding: 10px;
-  border: solid 1px var(--primary-color);
-  background: var(--primary-color);
-  color: var(--accent-color);
-  border-radius: 8px;
-}
-
-body, h1, h2, h3, p, a, button {
+body, h1, h2, h3 {
   font-family: 'Comic Sans MS', cursive;
 }
