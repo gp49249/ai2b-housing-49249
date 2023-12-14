@@ -1,19 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: url("https://placehold.co/100x100/FFFFFF/EFEFEF/png?text=49249");
-}
+@import '@angular/material/prebuilt-themes/purple-green.css'; /* Importuj wybrany schemat kolorystyczny */
 
 :root {
   --primary-color: #5b46c2; /* Kolor fioletowy */
-  --secondary-color: #3498db; /* Nowy kolor wtórny, pasujący do fioletowego */
   --accent-color: #ffffff; /* Nowy kolor akcentu */
-  --shadow-color: #E8E8E8;
 }
 
 body, h1, h2, h3 {
   font-family: 'Comic Sans MS', cursive;
 }
+
+h1 {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 1em;
+  margin: 0;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-datepicker-toggle {
+  color: var(--accent-color);
+}
+
+mat-datepicker-content {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+
+
+

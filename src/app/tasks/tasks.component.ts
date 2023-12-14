@@ -2,11 +2,15 @@ import {Component, OnInit} from '@angular/core';
 import {TasksService} from "../tasks.service";
 import {Task} from "../task";
 import {forkJoin, Observable} from "rxjs";
+import { ViewEncapsulation } from '@angular/core';
+import { DateAdapter } from '@angular/material/core';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  styleUrls: ['./tasks.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class TasksComponent implements OnInit {
   public tasks: Task[] = [];
@@ -14,8 +18,10 @@ export class TasksComponent implements OnInit {
   isProcessing: any;
 
   constructor(
-    private tasksService: TasksService
+    private tasksService: TasksService,
+    private dateAdapter: DateAdapter<Date>
   ) {
+    this.dateAdapter.setLocale('en-EN');
   }
 
   ngOnInit() {
@@ -53,7 +59,7 @@ export class TasksComponent implements OnInit {
     const observables: Observable<any>[] = [];
     for (const task of this.tasks) {
       if (!task.completed) {
-        continue
+        continue;
       }
 
       task.archived = true;
@@ -63,5 +69,13 @@ export class TasksComponent implements OnInit {
     forkJoin(observables).subscribe(()=> {
       this.ngOnInit();
     });
+  }
+
+  canAddTask(): boolean {
+    return !!this.newTask.title && !!this.newTask.deadline;
+  }
+
+  canArchiveCompleted(): boolean {
+    return this.tasks.some(task => task.completed);
   }
 }

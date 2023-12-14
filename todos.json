@@ -1,18 +1,39 @@
 {
   "todos": [
     {
+      "id": 1,
+      "title": "Hello World",
+      "deadline": "1900-01-01",
+      "completed": true,
+      "archived": true
+    },
+    {
       "id": 2,
       "title": "Hello Again World",
       "deadline": "2000-01-01",
-      "completed": false,
-      "archived": false
+      "completed": true,
+      "archived": true
     },
     {
-      "title": "Pierwsze zadanie",
-      "deadline": "2022-01-28",
+      "title": "Zadanie pierwsze",
+      "deadline": "2023-12-28",
       "completed": false,
       "archived": false,
       "id": 3
+    },
+    {
+      "title": "Zadanie drugie",
+      "deadline": "2023-12-18",
+      "completed": true,
+      "archived": false,
+      "id": 4
+    },
+    {
+      "title": "Zadanie trzecie",
+      "deadline": "2023-12-12",
+      "completed": true,
+      "archived": false,
+      "id": 5
     }
   ]
 }

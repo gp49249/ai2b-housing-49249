@@ -6,6 +6,16 @@ import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 import {FormsModule} from "@angular/forms";
 import { ArchiveComponent } from './archive/archive.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from "@angular/material/icon";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatChipsModule} from "@angular/material/chips";
+import {MatInputModule} from "@angular/material/input";
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -18,6 +28,16 @@ import { ArchiveComponent } from './archive/archive.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatChipsModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
